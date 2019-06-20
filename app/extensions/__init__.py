@@ -7,7 +7,8 @@ def initialize_extensions(app):
     configure_logging(app)
 
     # Flask-Restful
-    endpoint_registries = [register_zelos_endpoints]
+    #endpoint_registries = [register_zelos_endpoints]
+    endpoint_registries = [ ]
     rest_api.init_app(app, endpoint_registries, http_status_codes)
 
     if app.config['ENV'] == 'production' and app.name != 'test':

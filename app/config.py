@@ -24,7 +24,7 @@ class DevelopmentConfig(Config):
     DEBUG = True
 
     # Logging - https://docs.python.org/2/library/logging.html
-    LOG_FILE = os.path.abspath(os.path.join(Config.BASE_DIR + '/manager/logs/apps.log'))
+    LOG_FILE = os.path.abspath(os.path.join(Config.BASE_DIR + '/logs/apps.log'))
 class TestingConfig(Config):
     # Flask
     ENV = 'testing'
@@ -32,21 +32,21 @@ class TestingConfig(Config):
     TESTING = True
 
     # Logging - https://docs.python.org/2/library/logging.html
-    LOG_FILE = os.path.abspath(os.path.join(Config.BASE_DIR + '/manager/logs/apps.log'))
+    LOG_FILE = os.path.abspath(os.path.join(Config.BASE_DIR + '/logs/apps.log'))
 
 class StagingConfig(Config):
     # Flask
     ENV = 'staging'
 
     # Logging - https://docs.python.org/2/library/logging.html
-    LOG_FILE = '/var/log/ad_api/api.log'
+    LOG_FILE = '/var/log/api.log'
 
 class ProductionConfig(Config):
     # Flask
     ENV = 'production'
 
     # Logging - https://docs.python.org/2/library/logging.html
-    LOG_FILE = '/var/log/ad_api/api.log'
+    LOG_FILE = '/var/log/api.log'
 
 def config_options(option):
     # Validate configuration option.
