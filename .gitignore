@@ -4,3 +4,7 @@ lib/
 local/
 share/
 *.pyc
+
+# Environment configuration
+app/*.env
+

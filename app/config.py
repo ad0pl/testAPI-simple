@@ -3,7 +3,7 @@ import os
 basedir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 # Set environment variables if configuration.env exists.
-config_path = os.path.join(basedir, 'apps/config.env')
+config_path = os.path.join(basedir, 'app/config.env')
 
 # Assert environment configuration file exists
 assert os.path.exists(config_path), 'config.env required.'
