@@ -27,12 +27,12 @@
 </p>
 	  </li>
   </ul>
-  <h2><a name="recordHostViewFqdnDelete"></a>recordHostViewFqdnDelete</h2>
+  <h2><a name="recordHostViewDomainNameDelete"></a>recordHostViewDomainNameDelete</h2>
   <hr>
   <p></p>
   
   <h3 class="section">URL</h3>
-  <code>https://nadsapi.internal.das/testApi-simple/1.0.0/record_host/{view}/{fqdn}</code>
+  <code>https://nadsapi.internal.das/testApi-simple/1.0.0/record_host/{view}/{domain}/{name}</code>
   <h3 class="section">HTTP Method</h3>
   <code>DELETE</code>
   <h3 class="section">Response Type</h3>
@@ -56,10 +56,21 @@
       <span class="param-in">Path: </span>
       
       
-      <span class="param-name">fqdn</span>
+      <span class="param-name">domain</span>
       <span class="param-type">String</span>
       
-      <p class="param-description">Infoblox record fqdn field</p>
+      <p class="param-description">Infoblox record domain field</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">name</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Infoblox record name field</p>
 	  </li>
   </ul>
   <h2><a name="searchRecordA"></a>searchRecordA</h2>
@@ -93,7 +104,7 @@
   <p></p>
   <p>This resource represents the specific host object in Infoblox by it&#x27;s own reference identifier. </p>
   <h3 class="section">URL</h3>
-  <code>https://nadsapi.internal.das/testApi-simple/1.0.0/record_host/{view}/{fqdn}</code>
+  <code>https://nadsapi.internal.das/testApi-simple/1.0.0/record_host/{view}/{domain}/{name}</code>
   <h3 class="section">HTTP Method</h3>
   <code>GET</code>
   <h3 class="section">Response Type</h3>
@@ -117,10 +128,21 @@
       <span class="param-in">Path: </span>
       
       
-      <span class="param-name">fqdn</span>
+      <span class="param-name">domain</span>
       <span class="param-type">String</span>
       
-      <p class="param-description">Infoblox record fqdn field</p>
+      <p class="param-description">Infoblox record domain field</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">name</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Infoblox record name field</p>
 	  </li>
   </ul>
   <h2><a name="updateRecordHostByViewAndFqdn"></a>updateRecordHostByViewAndFqdn</h2>
@@ -128,13 +150,25 @@
   <p></p>
   <p>This operation will update a host object&#x27;s IP address. </p>
   <h3 class="section">URL</h3>
-  <code>https://nadsapi.internal.das/testApi-simple/1.0.0/record_host/{view}/{fqdn}</code>
+  <code>https://nadsapi.internal.das/testApi-simple/1.0.0/record_host/{view}/{domain}/{name}</code>
   <h3 class="section">HTTP Method</h3>
   <code>PUT</code>
   <h3 class="section">Response Type</h3>
   <div class="model" data-model="HostRecordItem"><a href="">HostRecordItem</a></div>
   <h3 class="section">Parameters</h3>
   <ul>
+	  <li class="parameter">
+      
+      
+      
+      
+      <span class="param-in">Body: </span>
+      <span class="param-name">body</span>
+      <span class="param-type">HostRecordItem(HostRecordItem)</span>
+      
+      <p class="param-description">A HostRecordItem that describes the host record to be created
+</p>
+	  </li>
 	  <li class="parameter">
       
       
@@ -152,10 +186,21 @@
       <span class="param-in">Path: </span>
       
       
-      <span class="param-name">fqdn</span>
+      <span class="param-name">domain</span>
       <span class="param-type">String</span>
       
-      <p class="param-description">Infoblox record fqdn field</p>
+      <p class="param-description">Infoblox record domain field</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">name</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Infoblox record name field</p>
 	  </li>
   </ul>
   <h2><a name="viewsGet"></a>viewsGet</h2>
