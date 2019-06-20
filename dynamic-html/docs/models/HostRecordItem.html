@@ -1,22 +1,27 @@
 
 <h2>HostRecordItem</h2>
 <ul class="parameter">
-  <li class="param-required-true">fqdn : String
-    <br/>
+  <li class="param-required-true">name : String
+    <br/>short name of the hostname of the object
   </li>
 </ul>
 <ul class="parameter">
   <li class="param-required-true">view : String
-    <br/>
+    <br/>DNS view record should be resolvable
   </li>
 </ul>
 <ul class="parameter">
   <li class="param-required-true">address : String
-    <br/>
+    <br/>Address this record is allocated to
   </li>
 </ul>
 <ul class="parameter">
   <li class="param-required-false">change_control : String
-    <br/>
+    <br/>Record of change that authorizes this change
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">domain : String
+    <br/>Domain this DNS record belongs to
   </li>
 </ul>
